@@ -1,0 +1,30 @@
+﻿@model Pizzapan.EntityLayer.Concrete.Product
+
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Ürün Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="ProductID" />
+    <label>Ürün Adı</label>
+    <input type="text" class="form-control" asp-for="Name" style="background-color:lightgray" />
+    <br />
+    <label>Ürün Açıklaması</label>
+    <input type="text" class="form-control" asp-for="Descriptoin" style="background-color:lightgray" />
+      <br />
+    <label>Fotoğraf</label>
+    <input type="text" class="form-control" asp-for="ImageUrl" style="background-color:lightgray" />
+    <br />
+    <label>Ürün Fiyatı</label>
+    <input type="text" class="form-control" asp-for="Price" style="background-color:lightgray" />
+    <br />
+    <label>Kategori ID</label>
+    <input type="text" class="form-control" asp-for="CategoryId" style="background-color:lightgray" />
+    <br />
+    <button class="btn btn-primary" style="background-color:green">Güncelle</button>
+</form>
+
+
